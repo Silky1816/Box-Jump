@@ -204,8 +204,15 @@
         keys.w.pressed = true
         break
       case 'Space':
+        if (
+        boxCollision({
+          box1: this,
+          box2: ground
+        })
+      ) {
         cube.velocity.y = 0.08
         break
+      }
     }
   })
 
