@@ -150,7 +150,7 @@
   const ground = new Box({
     width: 100,
     height: 10,
-    depth: 100,
+    depth: 80,
     color: '#0369a1',
     position: {
       x: 0,
@@ -204,15 +204,8 @@
         keys.w.pressed = true
         break
       case 'Space':
-        if (
-        boxCollision({
-          box1: cube,
-          box2: ground
-        })
-      ) {
         cube.velocity.y = 0.08
         break
-      }
     }
   })
 
