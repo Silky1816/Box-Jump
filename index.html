@@ -47,7 +47,7 @@
       width,
       height,
       depth,
-      color = '#00ff00',
+      color = '#2D3142',
       velocity = {
         x: 0,
         y: 0,
@@ -154,8 +154,8 @@
     color: '#0369a1',
     position: {
       x: 0,
-      y: -31,
-      z: -50
+      y: -11,
+      z: 0
     }
   })
 
@@ -229,7 +229,7 @@
   const enemies = []
 
   let frames = 0
-  let spawnRate = 4 00
+  let spawnRate = 200
   function animate() {
     const animationId = requestAnimationFrame(animate)
     renderer.render(scene, camera)
@@ -264,9 +264,9 @@
         height: 1,
         depth: 1,
         position: {
-          x: (Math.random() - 0.5) * 100,
+          x: (Math.random() - 0.5) * 50,
           y: 0,
-          z: -40
+          z: -20
         },
         velocity: {
           x: 0,
